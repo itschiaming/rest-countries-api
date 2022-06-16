@@ -1,0 +1,11 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5em 2em;
+}
+
+.darkMode + span {
+  cursor: pointer;
+  font-weight: 600;
+}

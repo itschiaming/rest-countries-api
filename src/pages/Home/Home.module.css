@@ -1,0 +1,61 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/* main */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.countriesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+}
+
+.country {
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.countryImg {
+  height: 100%;
+  width: 100%;
+}
+
+.countryImg > img {
+  aspect-ratio: 3 / 2;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  width: 100%;
+}
+
+.countryInfo {
+  background-color: white;
+  padding: 1em;
+  height: 100%;
+  width: 100%;
+}
+
+.countryInfo > h2 {
+  margin-bottom: 0.5em;
+}
+
+.countryInfoList {
+  height: 100%;
+  font-size: 0.8rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

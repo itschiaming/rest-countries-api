@@ -1,0 +1,118 @@
+/* search */
+
+.searchAndFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.searchContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.8em;
+  background-color: white;
+  padding: 0.5em;
+}
+
+.search {
+  opacity: 0.4;
+  font-size: 1.2rem;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  font-weight: 400;
+  opacity: 0.5;
+  outline: none;
+  background-color: transparent;
+}
+
+/* filter */
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.filterContainer {
+  align-self: flex-start;
+  width: 50%;
+  position: relative;
+}
+
+.filterBtn {
+  font-weight: 300;
+  width: 100%;
+  opacity: 0.8;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkboxes {
+  font-weight: 300;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.checkboxes > label {
+  cursor: pointer;
+}
+
+.checkboxes > label:hover {
+  font-weight: 600;
+}
+
+/* .checkbox:checked + label {
+  font-weight: 800;
+} */
+
+.filterVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 800px) {
+  .searchAndFilter {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .searchContainer {
+    height: 100%;
+    flex: 0.65;
+  }
+
+  .filterContainer {
+    height: 100%;
+    width: 100%;
+    flex: 0.35;
+  }
+
+  .filterBtn,
+  .checkboxes {
+    width: 100%;
+  }
+}

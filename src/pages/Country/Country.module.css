@@ -1,0 +1,92 @@
+/* Detail */
+
+.goback {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  margin-left: 5%;
+  margin-top: 1em;
+}
+
+.detailWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.countryDetailImg {
+  margin: 0 auto;
+}
+
+.countryDetailImg > img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.capital {
+  margin-bottom: 1em;
+}
+
+.countryDetailInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 2em;
+}
+
+.firstPart,
+.secondPart {
+  flex: 0.5;
+}
+
+.borderCountries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em;
+  margin-bottom: 1em;
+}
+
+.borderCountries > li {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.detailTitle {
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+.subtitle {
+  font-weight: 600;
+}
+
+.detailText {
+  opacity: 0.85;
+}
+
+@media (min-width: 800px) {
+  .detailWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .countryDetailImg,
+  .countryDetailInfo {
+    flex: 0.5;
+  }
+
+  .countryDetailInfoList {
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: 0;
+  }
+}
