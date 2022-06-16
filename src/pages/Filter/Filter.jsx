@@ -5,7 +5,6 @@ import classes from "./Filter.module.css";
 const Filter = ({ filterHandler, searchHandler }) => {
   const [visible, setVisible] = useState(false);
   const [checked, setChecked] = useState(null);
-  const [search, setSearch] = useState(null);
   const { isDarkMode, darkTheme } = useDark();
 
   const darkStyle = {
@@ -16,13 +15,12 @@ const Filter = ({ filterHandler, searchHandler }) => {
   const checkedHandler = (e) => {
     let region = e.target.value.toLowerCase();
     setVisible(false);
-    setChecked(region);
+    setChecked(region.slice(0, 1).toUpperCase() + region.slice(1));
     filterHandler(region);
   };
 
   const searchChangeHandler = (e) => {
     let searched = e.target.value.toLowerCase();
-    setSearch(searched);
     searchHandler(searched);
   };
 
@@ -81,7 +79,7 @@ const Filter = ({ filterHandler, searchHandler }) => {
             onChange={checkedHandler}
           />
           <label htmlFor="america" className={classes.label}>
-            America
+            Americas
           </label>
           <input
             type="radio"
