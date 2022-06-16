@@ -2,7 +2,7 @@
   "name": "rest-countries-api",
   "homepage": "https://itschiaming.github.io/rest-countries-api",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
