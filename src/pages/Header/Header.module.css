@@ -5,6 +5,10 @@
   padding: 2.5em 2em;
 }
 
+.title {
+  cursor: pointer;
+}
+
 .darkMode + span {
   cursor: pointer;
   font-weight: 600;
